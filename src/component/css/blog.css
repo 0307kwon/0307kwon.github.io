@@ -1,0 +1,57 @@
+.blog-main-div {
+  position: absolute;
+  top: 0rem;
+  width: 50rem;
+  height: 100%;
+
+  background-color: #ecf0f1;
+
+  left: 50%;
+  margin-left: -25rem;
+}
+.blog-header-div {
+  position: relative;
+  height: 5rem;
+
+  border-bottom: 1px solid;
+
+  padding: 1rem;
+}
+.blog-header-div h1 {
+  font-size: 4rem;
+  margin: 0rem;
+}
+
+.blog-body-div {
+  position: relative;
+  padding: 1rem;
+}
+
+nav {
+  position: relative;
+  height: 2rem;
+
+  border-bottom: 1px solid;
+
+  font-size: 1rem;
+}
+ul {
+  margin: 0rem;
+  list-style-type: none;
+  padding: 0.2rem;
+}
+li {
+  margin-right: 0.3rem;
+  float: left;
+}
+
+nav button {
+  border: 0;
+  outline: 0;
+}
+nav button:hover {
+  color: #ee5253;
+}
+nav button:active {
+  color: black;
+}
