@@ -1,0 +1,19 @@
+.intro-main-div {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  border: 1px solid;
+  border-radius: 3px;
+
+  background-color: #ecf0f1;
+  border-color: #636e72;
+
+  left: 50%;
+  margin-left: -400px;
+
+  top: 50%;
+  margin-top: -250px;
+}
+.intro-main-div div {
+  padding: 10px;
+}
