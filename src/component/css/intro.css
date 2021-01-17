@@ -1,7 +1,7 @@
 .intro-main-div {
   position: absolute;
-  width: 800px;
-  height: 500px;
+  width: 50rem;
+  height: 31.25rem;
   border: 1px solid;
   border-radius: 3px;
 
@@ -9,10 +9,10 @@
   border-color: #636e72;
 
   left: 50%;
-  margin-left: -400px;
+  margin-left: -25rem;
 
   top: 50%;
-  margin-top: -250px;
+  margin-top: -15.625rem;
 }
 .intro-main-div div {
   padding: 10px;

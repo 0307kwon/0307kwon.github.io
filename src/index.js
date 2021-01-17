@@ -3,10 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { TITLE } from "./common/variable.js";
+import DocumentTitle from "react-document-title";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DocumentTitle title={TITLE}>
+      <App />
+    </DocumentTitle>
   </React.StrictMode>,
   document.getElementById("root")
 );
