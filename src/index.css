@@ -2,3 +2,16 @@ h1 {
   margin-top: 0rem;
   margin-bottom: 1rem;
 }
+
+.App {
+  position: absolute;
+  width: 99%;
+  height: 100%;
+
+  top: 0rem;
+
+  background: linear-gradient(to top,
+  #63cdda 0%,
+  #f78fb3 100%);
+  background-size: 100%;
+}
