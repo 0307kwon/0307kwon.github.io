@@ -5,13 +5,17 @@ h1 {
 
 .App {
   position: absolute;
-  width: 99%;
+  width: 100%;
   height: 100%;
 
   top: 0rem;
+  left: 0rem;
 
   background: linear-gradient(to top,
-  #63cdda 0%,
-  #f78fb3 100%);
+  rgb(202, 202, 202) 0%,
+  rgb(233, 233, 233) 100%);
   background-size: 100%;
+
+  font-family: "나눔고딕",NanumGothic,NanumGothicWebFont,"Malgun Gothic","맑은 고딕",Dotum,"돋움",Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
+

@@ -3,8 +3,9 @@
   top: 0rem;
   width: 50rem;
   height: 100%;
+  border: 1px solid  rgb(168, 168, 168);
 
-  background-color: #ecf0f1;
+  background-color: white;
 
   left: 50%;
   margin-left: -25rem;
@@ -13,7 +14,7 @@
   position: relative;
   height: 5rem;
 
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgb(168, 168, 168);
 
   padding: 1rem;
 }
@@ -31,14 +32,14 @@ nav {
   position: relative;
   height: 2rem;
 
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgb(168, 168, 168);
 
   font-size: 1rem;
 }
 ul {
   margin: 0rem;
   list-style-type: none;
-  padding: 0.2rem;
+  padding: 0.3rem;
 }
 li {
   margin-right: 0.3rem;
@@ -48,6 +49,7 @@ li {
 nav button {
   border: 0;
   outline: 0;
+  background-color: white;
 }
 nav button:hover {
   color: #ee5253;

@@ -2,12 +2,9 @@
   position: absolute;
   width: 50rem;
   height: 31.25rem;
-  background: linear-gradient(to right, 
-  rgba(255, 255, 255, 0) 0%, 
-  rgba(255, 255, 255, 0.8) 10%, 
-  rgba(255, 255, 255, 0.8) 90%, 
-  rgba(255, 255, 255, 0) 100%);
-  border-color: #636e72;
+  background-color: white;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 10px;
 
   left: 50%;
   margin-left: -25rem;
@@ -16,5 +13,5 @@
   margin-top: -15.625rem;
 }
 .intro-main-div div {
-  padding: 1rem 5rem 0rem 5rem;
+  padding: 3rem 5rem 0rem 5rem;
 }
