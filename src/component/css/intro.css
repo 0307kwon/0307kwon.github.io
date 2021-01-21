@@ -2,9 +2,8 @@
   position: absolute;
   width: 50rem;
   height: 31.25rem;
-  background-color: white;
-  border: 1px solid rgb(168, 168, 168);
-  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
 
   left: 50%;
   margin-left: -25rem;

@@ -10,6 +10,7 @@ export default class Intro extends Component {
     return (
       <div class={CLASS.INTRO_MAIN_DIV}>
         <div>
+          <img src="/image/root-background.jpg" width="500px"></img>
           <h1>안녕하세요</h1>
           <p>권세진 입니다</p>
           <button

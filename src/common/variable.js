@@ -10,7 +10,11 @@ export const CLASS = {
 
 export const ROUTER = {
   INTRO: "intro",
+
   BLOG: "blog",
+  HOME: "Home",
+  DAILY_LIFE: "일상",
+  GUEST_BOOK: "방명록",
 };
 
 export const CONTENT = {
