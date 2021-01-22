@@ -6,6 +6,9 @@ export const CLASS = {
   BLOG_MAIN_DIV: "blog-main-div",
   BLOG_HEADER_DIV: "blog-header-div",
   BLOG_BODY_DIV: "blog-body-div",
+
+  DAILY_LIFE_POST_LIST: "dailylife-post-list",
+  DAILY_LIFE_POST: "dailylife-post",
 };
 
 export const ROUTER = {

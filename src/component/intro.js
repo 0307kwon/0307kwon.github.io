@@ -8,7 +8,7 @@ export default class Intro extends Component {
   }
   render() {
     return (
-      <div class={CLASS.INTRO_MAIN_DIV}>
+      <div className={CLASS.INTRO_MAIN_DIV}>
         <div>
           <img src="/image/root-background.jpg" width="500px"></img>
           <h1>안녕하세요</h1>

@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { CLASS, CONTENT, ROUTER } from "../common/variable";
 import "./css/blog.css";
+import DailyLife from "./daily-life.js";
 
 export default class Blog extends Component {
   constructor(props) {
@@ -42,14 +43,14 @@ export default class Blog extends Component {
       contentsView = this._makeGuestBookView();
     }
     return (
-      <div class={CLASS.BLOG_MAIN_DIV}>
-        <div class={CLASS.BLOG_HEADER_DIV}>
+      <div className={CLASS.BLOG_MAIN_DIV}>
+        <div className={CLASS.BLOG_HEADER_DIV}>
           <h1>{CONTENT.TITLE}</h1>
         </div>
         <nav>
           <ul>{this._makeNavList()}</ul>
         </nav>
-        <div class={CLASS.BLOG_BODY_DIV}>{contentsView}</div>
+        <div className={CLASS.BLOG_BODY_DIV}>{contentsView}</div>
       </div>
     );
   }
@@ -58,7 +59,7 @@ export default class Blog extends Component {
     return <h1>메인페이지 입니다.</h1>;
   }
   _makeDailyLifeView() {
-    return <h1>일상입니다.</h1>;
+    return <DailyLife></DailyLife>;
   }
   _makeGuestBookView() {
     return <h1>방명록입니다.</h1>;
