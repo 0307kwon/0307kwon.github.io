@@ -9,7 +9,9 @@ export default class DailyLife extends Component {
   render() {
     return (
       <div>
-        <div className={CLASS.DAILY_LIFE_POST_LIST}></div>
+        <div className={CLASS.DAILY_LIFE_POST_LIST}>
+          <button>생성</button>
+        </div>
         <div className={CLASS.DAILY_LIFE_POST}></div>
       </div>
     );

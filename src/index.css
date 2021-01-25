@@ -17,3 +17,14 @@ h1 {
   font-family: "나눔고딕",NanumGothic,NanumGothicWebFont,"Malgun Gothic","맑은 고딕",Dotum,"돋움",Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 
+button {
+  border: 0;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+button:hover {
+  color: #ee5253;
+}
+button:active {
+  color: black;
+}

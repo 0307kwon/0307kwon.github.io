@@ -42,15 +42,3 @@ li {
   margin-right: 0.3rem;
   float: left;
 }
-
-nav button {
-  border: 0;
-  outline: 0;
-  background-color: rgba(0, 0, 0, 0);
-}
-nav button:hover {
-  color: #ee5253;
-}
-nav button:active {
-  color: black;
-}

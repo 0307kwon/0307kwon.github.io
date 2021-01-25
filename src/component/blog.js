@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { CLASS, CONTENT, ROUTER } from "../common/variable";
+import { makeButtonByInnerText } from "../util/dom-controller";
 import "./css/blog.css";
 import DailyLife from "./daily-life.js";
 
@@ -9,27 +10,6 @@ export default class Blog extends Component {
     this.state = {
       router: ROUTER.HOME,
     };
-  }
-
-  _makeNavList() {
-    const nav = CONTENT.NAV;
-    let list = [];
-    for (let navText of nav) {
-      list.push(
-        <li key={navText}>
-          <button
-            onClick={() => {
-              this.setState({
-                router: navText,
-              });
-            }}
-          >
-            {navText}
-          </button>
-        </li>
-      );
-    }
-    return list;
   }
   render() {
     let contentsView;
@@ -55,6 +35,16 @@ export default class Blog extends Component {
     );
   }
 
+  _makeNavList() {
+    const nav = CONTENT.NAV;
+    let list = [];
+    for (let navText of nav) {
+      list.push(
+        <li key={navText}>{makeButtonByInnerText.call(this, navText)}</li>
+      );
+    }
+    return list;
+  }
   _makeHomeView() {
     return <h1>메인페이지 입니다.</h1>;
   }
