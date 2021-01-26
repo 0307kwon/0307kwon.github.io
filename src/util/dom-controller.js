@@ -1,23 +1,23 @@
-export function makeButtonByInnerText(innerText) {
+export function makeRouteButton(innerText, className) {
   return (
-    <button
-      onClick={() => {
-        this.setState({
-          router: innerText,
-        });
-      }}
-    >
+    <button className={className} data-name={innerText}>
       {innerText}
     </button>
   );
 }
 
-/* 버튼 이벤트를 어떻게 할지 고민
-export function _addClickEventByClassName(className, callback) {
-  document.addEventListener("click", (event) => {
-    if (event.target.className === className) {
-      
-    }
-  })
+export function addClickEventByClassName(className, callback) {
+  const buttons = document.getElementsByClassName(className);
+  Array.prototype.forEach.call(buttons, (button) => {
+    button.addEventListener("click", callback);
+  });
 }
+/* 
+ <button
+      onClick={() => {
+        
+      }}
+    >
+      {innerText}
+    </button>
 */

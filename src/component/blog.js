@@ -1,6 +1,9 @@
 import { Component } from "react";
 import { CLASS, CONTENT, ROUTER } from "../common/variable";
-import { makeButtonByInnerText } from "../util/dom-controller";
+import {
+  addClickEventByClassName,
+  makeRouteButton,
+} from "../util/dom-controller";
 import "./css/blog.css";
 import DailyLife from "./daily-life.js";
 
@@ -34,13 +37,20 @@ export default class Blog extends Component {
       </div>
     );
   }
+  componentDidMount() {
+    addClickEventByClassName(CLASS.ROUTE_BUTTON, (event) => {
+      this.setState({
+        router: event.target.dataset.name,
+      });
+    });
+  }
 
   _makeNavList() {
     const nav = CONTENT.NAV;
     let list = [];
     for (let navText of nav) {
       list.push(
-        <li key={navText}>{makeButtonByInnerText.call(this, navText)}</li>
+        <li key={navText}>{makeRouteButton(navText, CLASS.ROUTE_BUTTON)}</li>
       );
     }
     return list;
