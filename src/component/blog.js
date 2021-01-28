@@ -15,6 +15,7 @@ export default class Blog extends Component {
     };
   }
   render() {
+    console.log("렌더");
     let contentsView;
     if (this.state.router === ROUTER.HOME) {
       contentsView = this._makeHomeView();

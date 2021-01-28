@@ -12,12 +12,8 @@ export function addClickEventByClassName(className, callback) {
     button.addEventListener("click", callback);
   });
 }
-/* 
- <button
-      onClick={() => {
-        
-      }}
-    >
-      {innerText}
-    </button>
-*/
+
+export function addClickEventById(id, callback) {
+  const button = document.getElementById(id);
+  button.addEventListener("click", callback);
+}

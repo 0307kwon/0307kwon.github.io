@@ -9,8 +9,20 @@ export const CLASS = {
   BLOG_HEADER_DIV: "blog-header-div",
   BLOG_BODY_DIV: "blog-body-div",
 
-  DAILY_LIFE_POST_LIST: "dailylife-post-list",
-  DAILY_LIFE_POST: "dailylife-post",
+  DAILY_LIFE_POST_LIST: "daily-life-post-list",
+  DAILY_LIFE_POST: "daily-life-post",
+  DAILY_LIFE_CREATE_BUTTON: "daily-life-create-button",
+};
+
+export const ID = {
+  CREATE_POST_TITLE: "create-post-title",
+  CREATE_POST_CONTENTS: "create-post-contents",
+  CREATE_POST_BUTTON: "create-post-button",
+};
+
+export const PLACEHOLDER = {
+  CREATE_POST_TITLE: "게시물 제목을 입력하세요",
+  CREATE_POST_CONTENTS: "게시물 내용을 입력하세요",
 };
 
 export const ROUTER = {
@@ -18,7 +30,12 @@ export const ROUTER = {
 
   BLOG: "blog",
   HOME: "Home",
+
   DAILY_LIFE: "일상",
+  DAILY_LIFE_LIST: "일상 게시물 리스트",
+
+  POST_CREATE: "게시물 작성",
+
   GUEST_BOOK: "방명록",
 };
 

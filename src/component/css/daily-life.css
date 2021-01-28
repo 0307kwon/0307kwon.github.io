@@ -1,4 +1,4 @@
-.dailylife-post-list {
+.daily-life-post-list {
   position: relative;
   height: 5rem;
 
@@ -8,7 +8,7 @@
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.dailylife-post {
+.daily-life-post {
   position: relative;
   height: 10rem;
 
