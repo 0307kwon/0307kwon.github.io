@@ -7,22 +7,29 @@ export default class Intro extends Component {
     super();
   }
   render() {
+    return <div className={CLASS.INTRO_MAIN_DIV}>{this._makeIntroView()}</div>;
+  }
+
+  _makeIntroView() {
     return (
-      <div className={CLASS.INTRO_MAIN_DIV}>
-        <div>
-          <img src="/image/root-background.jpg" width="500px"></img>
-          <h1>안녕하세요</h1>
-          <p>권세진 입니다</p>
-          <button
-            onClick={(event) => {
-              event.preventDefault();
-              this.props.onClick();
-            }}
-          >
-            enter
-          </button>
-        </div>
+      <div>
+        <img src="/image/root-background.jpg" width="500px"></img>
+        <h1>안녕하세요</h1>
+        <p>권세진 입니다</p>
+        {this._makeEnterBlogButton()}
       </div>
+    );
+  }
+  _makeEnterBlogButton() {
+    return (
+      <button
+        onClick={(event) => {
+          event.preventDefault();
+          this.props.onClick();
+        }}
+      >
+        enter
+      </button>
     );
   }
 }
